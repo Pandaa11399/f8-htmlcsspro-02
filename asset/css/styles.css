@@ -9,6 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    height: 2000px;
 }
 
 a {
@@ -20,10 +21,12 @@ a {
     min-width: 118px;
     padding: 8px 16px;
     background: #171100;
+    border: none;
     border-radius: 24.5px;
     color: #fff;
     font-weight: 600;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 
@@ -35,6 +38,10 @@ a {
 /* ========== Header Navbar ========== */
 
 .header-navbar {
+    position: sticky;
+    top: -20px;
+    left: 0;
+    z-index: 1;
     background-color: var(--primary-color);
 }
 
@@ -80,9 +87,110 @@ a {
 
 .header-navbar .navbar .btn {
     min-width: 144px;
-    padding: 11px 41px 10px;
+    padding: 15px 41px 13px;
     margin-left: 49px;
 }
+
+/* ========== Header Hero ========== */
+.header-hero {
+    padding-top: 45px;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+.header-hero .content{
+    display: flex;
+}
+
+.header-hero img  {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.header-hero .info {
+    width: 40%;
+    margin-left: 230px;
+    margin-top: 64px;
+}
+
+.header-hero .info .title {
+    font-family: 'Sen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.header-hero .info .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+    margin-top: 22px;
+}
+
+.header-hero .info .action {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.header-hero .info .action .btn {
+    min-width: 180px;
+    background-color: #FFB900;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 21px 33px;
+    border-radius: 32px;
+}
+
+.header-hero .info .action .watch-video {
+    margin-left: 28px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.header-hero .info .action .watch-video i {
+    margin-right: 14px;
+    color: #FFB900;
+    font-size: 3rem;
+    transform: translateY(5px);
+}
+
+.header-hero .info .record {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #5F5B53;
+}
+
+.header-hero .info .record .students, .header-hero .info .record .courses {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.header-hero .info .record .courses {
+    margin-left: 28px;
+}
+
+.header-hero .info .record strong {
+    font-family: 'Sen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #171100;
+
+    padding-right: 10px;
+}
+
+
+
 
 
 
