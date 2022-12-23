@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary-color: #FFFCF4;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
@@ -10,4 +14,80 @@ body {
 a {
     text-decoration: none;
 }
+/* ========== Common ========== */
+
+.btn {
+    min-width: 118px;
+    padding: 8px 16px;
+    background: #171100;
+    border-radius: 24.5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+
+.content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ========== Header Navbar ========== */
+
+.header-navbar {
+    background-color: var(--primary-color);
+}
+
+.header-navbar .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 36px;
+}
+
+.header-navbar .navbar .navigation {
+    display: flex;
+    margin-left: 512px;
+}
+
+.header-navbar .navbar .navigation .item {
+    padding: 8px 21px;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #5F5B53;
+}
+
+.header-navbar .navigation li:first-child .item {
+    position: relative;
+    color: #171100;
+    font-weight: 600;
+}
+
+.header-navbar .navigation li:first-child .item::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 22px;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+
+}
+
+.header-navbar .navbar .btn {
+    min-width: 144px;
+    padding: 11px 41px 10px;
+    margin-left: 49px;
+}
+
+
+
+
+
+
+
 
